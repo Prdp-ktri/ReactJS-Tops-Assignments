@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Handling in JavaScript</title>
+</head>
+
+<body>
+
+  <script>
+    try {
+      let num = Number(prompt("Enter a number you want to divide by Zero:"));
+      let denominator = 0;
+
+      if (denominator === 0) {
+        throw new Error("Can't divide by Zero");
+      }
+      let answer = num / denominator;
+      document.write("Result: ", answer)
+    } catch (error) {
+      document.write("Result: ", error.message)
+    }
+  </script>
+
+</body>
+
+</html>
